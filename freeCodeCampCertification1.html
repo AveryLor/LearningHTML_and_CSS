@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <!--User Story 1--> 
+  <head>
+    <meta charset="UTF-8">
+    <title>University of Waterloo Application</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+
+  <!--Basic setup--> 
+  <body>
+    <h1 id="title">Application Form</h1>
+    <p id="description">Enter your login information and answer the following questions</p>
+  <form id="survey-form">
+    
+    <!--Name, Email and Age fieldset-->
+    <fieldset>
+      <label for="name" id="name-label">Enter your name:
+        <input id="name" type="text" placeholder="Name" required></input>
+      </label>
+      <label for="email" id="email-label">Enter your email: 
+        <input id="email" type="email" placeholder="Email" required></input>
+      </label>
+      <label for="number" id="number-label"> Enter your age: 
+        <input id="number" type="number" min="18" max="120" placeholder="age" required></input>
+      </label>
+    </fieldset>
+
+  <!--Drop down form-->
+  <fieldset>
+    <label for="dropdown">What Faculty are you applying to? 
+      <select id="dropdown">
+        <option>Engineering</option>
+        <option>Mathematics</option>
+        <option>Environment</option>
+        <option>Health</option>
+        <option>Science</option>
+        <option>Arts</option>
+      </select>
+    </label> 
+  </fieldset>
+
+  <!--Usage of Radio Button's-->
+  <fieldset>
+    <legend>Have you previously attended Waterloo?</legend>
+      
+      <label for="yes"><input id="yes" name="options" type="radio" value="yes-value"></input>Yes</label>
+      <label for="no"><input id="no" name="options" type="radio" value="no"></input>No</label> 
+    </fieldset>
+    
+  <!--Usage of textarea-->
+  <fieldset>
+    <h4>Why do you want to attend the University of Waterloo</h4>
+    <textarea cols = 50 placeholder="I wish to attend the University of Waterloo because..."></textarea>
+  </fieldset>
+  
+  <!--Usage of a textbox-->
+  <fieldset>
+    <label>
+      <input type="checkbox" value="agree">Do you agree to the <a href="https://uwaterloo.ca/procurement/sites/ca.procurement/files/uploads/files/standardtermsconditions.pdf">terms and conditions</a>.</input>
+    </label>
+    <input type="checkbox" value="consent">Do you consent to having a photo of your face being published if you were admitted?</input>
+    </label>
+  </fieldset>
+
+  <!--Usage of Submit Button-->
+  <input type="submit" value="Submit" id="submit"/>
+
+  </form>
+  </body>
+</html>
